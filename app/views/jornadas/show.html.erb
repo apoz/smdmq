@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Numero:</b>
+  <%= @jornada.numero %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @jornada.fecha %>
+</p>
+
+<p>
+  <b>Finalizada:</b>
+  <%= @jornada.finalizada %>
+</p>
+
+
+<%= link_to 'Edit', edit_jornada_path(@jornada) %> |
+<%= link_to 'Back', jornadas_path %>

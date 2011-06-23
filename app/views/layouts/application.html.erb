@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
 <head>
-  <title>Smdmq</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<title>SMDM quinielas</title>
   <%= stylesheet_link_tag :all %>
   <%= stylesheet_link_tag 'formtastic', 'my_formtastic_changes' %>
   <!--[if IE 6]><%= stylesheet_link_tag 'formtastic_ie6' %><![endif]-->
@@ -10,8 +11,24 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+	<div id="container">
+		<div id="head">
+			<a href="#" class="logo" title="I am a web designer">Insert your anchor text here.</a>
+			<div class="nav">
+				<a href="#about">About</a>
+				<a href="#services">Services</a>
+				<a href="#portfolio">Work</a>
+				<a href="#get-in-touch">Contact</a>
+				<a href="#">Blog</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- End Head -->
+		
+		<div id="content">
 
-<%= yield %>
+		<%= yield %>
+	</div>
 
 </body>
 </html>

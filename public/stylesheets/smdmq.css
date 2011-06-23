@@ -27,32 +27,37 @@
 #equipo_list .equipo_image {
   width:        70px;
   height:       70px;
+  vertical-align:middle;
 }
 #equipo_list .equipo_nombre {
   font-size:    large;
   text-align:   left;
   padding-left: 1em;
+  vertical-align:middle;
 }
 #equipo_list .equipo_escudo {
   font-size:    small;
   text-align:   left;
   padding-left: 1em;
+  vertical-align:middle;
 }
 #equipo_list .equipo_division {
   font-size:    medium;
   text-align:   left;
   padding-left: 1em;
+  vertical-align:middle;
 }
 #equipo_list .equipo_actions {
   font-size:    x-small;
   text-align:   right;
   padding-left: 1em;
+  vertical-align:middle;
 }
 #equipo_list .lista_equipo_impar {
-  background:   #4F4FD9;
+  background:   #CCCCCC;
 }
 #equipo_list .lista_equipo_par {
-  background:   #7373D9;
+  background:   #FFFFFF;
 }
 
 /* Styles for divisions/index */
@@ -65,25 +70,76 @@
 }
 #division_list .division_image {
     height:       70px;
+	vertical-align:middle;
 }
 #division_list .division_nombre {
   font-size:    large;
+  vertical-align:middle;
   text-align:   left;
   padding-left: 1em;
 }
 #division_list .division_escudo {
   font-size:    small;
+  vertical-align:middle;
   text-align:   left;
   padding-left: 1em;
 }
 #division_list .division_actions {
   font-size:    x-small;
+  vertical-align:middle;
   text-align:   right;
   padding-left: 1em;
 }
 #division_list .lista_division_impar {
-  background:   #4F4FD9;
+  background:   #CCCCCC;
 }
 #division_list .lista_division_par {
-  background:   #7373D9;
+  background:   #FFFFFF;
+}
+
+
+/* Styles for jornadas/index */
+#jornada_list table {
+        border-collapse: collapse;
+}
+#jornada table tr td {
+        padding: 5px;
+        vertical-align: center;
+}
+#jornada_list .jornada_numero {
+  font-size:    x-large;
+  text-align:   left;
+  vertical-align:middle;
+  padding-left: 40px;
+  padding-right: 100px;
+}
+
+#jornada_list .jornada_fecha {
+  font-size:    large;
+  text-align:   left;
+  padding-left: 0px;
+  vertical-align:middle;
+  padding-right: 100px;
+}
+#jornada_list .jornada_finalizada {
+  font-size:    large;
+  text-align:   left;
+  padding-left: 0px;
+  vertical-align:middle;
+  padding-right: 100px;
+}
+#jornada_list .jornada_actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 40px;
+  vertical-align:middle;
+  padding-right: 100px;
+}
+#jornada_list .lista_jornada_impar {
+  height:       70px;
+  background:   #CCCCCC;
+}
+#jornada_list .lista_jornada_par {
+  height:       70px;
+  background:   #FFFFFF;
 }

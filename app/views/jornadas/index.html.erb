@@ -1,0 +1,28 @@
+<div id="jornada_list">
+<h1>Lista de jornadas</h1>
+<br />
+
+
+<table>
+
+<% @jornadas.each do |jornada| %>
+  <tr class="<%= cycle('lista_jornada_par', 'lista_jornada_impar') %>">
+    <td class="jornada_numero"><%= jornada.numero %></td>
+    <td class="jornada_fecha"><%= jornada.fecha %></td>
+    <td class="jornada_finalizada"><%= jornada.finalizada==0 ? "No" : "Si" %></td>
+    <td class="jornada_actions">
+		<%= link_to 'Show', jornada %><br/>
+		<%= link_to 'Edit', edit_jornada_path(jornada) %><br/>
+		<%= link_to 'Destroy', jornada, 
+			:confirm => 'Are you sure?',
+			:method => :delete %>
+	</td>
+  </tr>
+<% end %>
+</table>
+</div>
+<br />
+
+<%= link_to 'New Jornada', new_jornada_path %>
+
+  

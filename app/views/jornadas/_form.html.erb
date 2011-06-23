@@ -1,0 +1,15 @@
+<%= semantic_form_for @jornada do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :numero %>
+    <%= f.input :fecha , :order => [:day, :month, :year],
+						 :include_blank => false,
+						 :start_year => Time.now.year %>
+    <%= f.input :finalizada, :as => :select, :label => "Finalizada", :collection => [["No", 0], ["Si", 1]]%>
+  <% end %>
+
+  <%= f.buttons do %>
+    <%= f.commit_button %>
+  <% end %>
+<% end %>
+
+

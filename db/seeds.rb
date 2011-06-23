@@ -19,3 +19,8 @@ Equipo.create(:nombre => "Real Betis Balompie", :escudo => "betis.gif", :divisio
 Equipo.create(:nombre => "Cadiz", :escudo => "cadiz-cf.gif", :division_id => 2)
 Equipo.create(:nombre => "Nastic de Tarragona", :escudo => "gimnastic-tarragona.gif", :division_id => 2)
 
+Jornada.delete_all
+Jornada.create(:numero => 1, :fecha => "01/01/2011", :finalizada => 0)
+Jornada.create(:numero => 2, :fecha => "01/02/2011", :finalizada => 1)
+Jornada.create(:numero => 3, :fecha => "01/03/2011", :finalizada => 0)
+Jornada.create(:numero => 4, :fecha => "01/04/2011", :finalizada => 1)

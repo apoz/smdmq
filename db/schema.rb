@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110616175510) do
+ActiveRecord::Schema.define(:version => 20110623152332) do
 
   create_table "divisions", :force => true do |t|
     t.string   "nombre"
@@ -23,6 +23,14 @@ ActiveRecord::Schema.define(:version => 20110616175510) do
     t.string   "nombre"
     t.string   "escudo"
     t.integer  "division_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "jornadas", :force => true do |t|
+    t.integer  "numero"
+    t.date     "fecha"
+    t.integer  "finalizada", :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

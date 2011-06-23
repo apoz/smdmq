@@ -1,4 +1,6 @@
 Smdmq::Application.routes.draw do
+  resources :jornadas
+
   get "home/index"
 
   resources :equipos
