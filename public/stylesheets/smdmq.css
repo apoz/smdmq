@@ -1,0 +1,89 @@
+/* Global styles */
+
+#store #notice {
+        color: #000;
+        border: 2px solid red;
+        padding: 1em;
+        margin-bottom: 2em;
+        background-color: #f0f0f0;
+        font: bold smaller sans-serif;
+}
+
+
+#store h1 {
+        font:  150% sans-serif;
+        color: #226;
+        border-bottom: 3px dotted #77d;
+}
+
+/* Styles for equipos/index */
+#equipo_list table {
+        border-collapse: collapse;
+}
+#equipo_list table tr td {
+        padding: 5px;
+        vertical-align: top;
+}
+#equipo_list .equipo_image {
+  width:        70px;
+  height:       70px;
+}
+#equipo_list .equipo_nombre {
+  font-size:    large;
+  text-align:   left;
+  padding-left: 1em;
+}
+#equipo_list .equipo_escudo {
+  font-size:    small;
+  text-align:   left;
+  padding-left: 1em;
+}
+#equipo_list .equipo_division {
+  font-size:    medium;
+  text-align:   left;
+  padding-left: 1em;
+}
+#equipo_list .equipo_actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 1em;
+}
+#equipo_list .lista_equipo_impar {
+  background:   #4F4FD9;
+}
+#equipo_list .lista_equipo_par {
+  background:   #7373D9;
+}
+
+/* Styles for divisions/index */
+#division_list table {
+        border-collapse: collapse;
+}
+#division_list table tr td {
+        padding: 5px;
+        vertical-align: top;
+}
+#division_list .division_image {
+    height:       70px;
+}
+#division_list .division_nombre {
+  font-size:    large;
+  text-align:   left;
+  padding-left: 1em;
+}
+#division_list .division_escudo {
+  font-size:    small;
+  text-align:   left;
+  padding-left: 1em;
+}
+#division_list .division_actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 1em;
+}
+#division_list .lista_division_impar {
+  background:   #4F4FD9;
+}
+#division_list .lista_division_par {
+  background:   #7373D9;
+}

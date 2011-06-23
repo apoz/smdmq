@@ -1,0 +1,26 @@
+<div id="division_list">
+<h1>Listado de divisiones</h1>
+
+<table>
+ 
+<% @divisions.each do |division| %>
+ <tr class="<%= cycle('lista_division_par', 'lista_division_impar') %>">
+  <td>
+     <%= image_tag(division.escudo, :class => 'division_image') %>
+  </td>
+    <td class="division_nombre"><%= division.nombre %></td>
+    <td class="division_escudo"><%= division.escudo %></td>
+   	<td class="division_actions">
+		<%= link_to 'Show', division %><br/>
+		<%= link_to 'Edit', edit_division_path(division) %><br/>
+		<%= link_to 'Destroy', division,
+			:confirm => '¿Estas seguro?',
+			:method => :delete %>
+	</td>
+  </tr>
+<% end %>
+</table>
+</div>
+<br />
+
+<%= link_to 'New Division', new_division_path %>

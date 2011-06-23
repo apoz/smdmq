@@ -1,0 +1,27 @@
+<div id="equipo_list">
+<h1>Lista de equipos</h1>
+
+<table>
+  
+<% @equipos.each do |equipo| %>
+  <tr class="<%= cycle('lista_equipo_par', 'lista_equipo_impar') %>">
+  <td>
+     <%= image_tag(equipo.escudo, :class => 'equipo_image') %>
+  </td>
+    <td class="equipo_nombre"><%= equipo.nombre %></td>
+    <td class="equipo_escudo"><%= equipo.escudo %></td>
+    <td class="equipo_division"><%= equipo.division_id %></td>
+	<td class="equipo_actions">
+		<%= link_to 'Show', equipo %><br/>
+		<%= link_to 'Edit', edit_equipo_path(equipo) %><br/>
+		<%= link_to 'Destroy', equipo,
+			:confirm => '¿Estas seguro?',
+			:method => :delete %>
+	</td>
+</tr>
+<% end %>
+</table>
+</div>
+<br />
+
+<%= link_to 'New Equipo', new_equipo_path %>

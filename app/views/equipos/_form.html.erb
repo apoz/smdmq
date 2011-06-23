@@ -1,0 +1,9 @@
+<%= semantic_form_for @equipo do |form| %>
+    <%= form.inputs do %>
+      <%= form.input :nombre %>
+      <%= form.input :escudo %>
+      <%= form.input :division, :include_blank => false %>
+    <% end %>
+	 
+    <%= form.buttons %>
+  <% end %>
