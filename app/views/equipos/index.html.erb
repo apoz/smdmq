@@ -10,7 +10,10 @@
   </td>
     <td class="equipo_nombre"><%= equipo.nombre %></td>
     <td class="equipo_escudo"><%= equipo.escudo %></td>
-    <td class="equipo_division"><%= equipo.division_id %></td>
+    <td class="equipo_division"><%=equipo.division.nombre %></td>
+	<td>
+	<%= image_tag(equipo.division.escudo, :class => 'equipo_image') %>
+	</td>
 	<td class="equipo_actions">
 		<%= link_to 'Show', equipo %><br/>
 		<%= link_to 'Edit', edit_equipo_path(equipo) %><br/>

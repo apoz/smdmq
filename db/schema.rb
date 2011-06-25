@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110623152332) do
+ActiveRecord::Schema.define(:version => 20110625154226) do
 
   create_table "divisions", :force => true do |t|
     t.string   "nombre"
@@ -33,6 +33,21 @@ ActiveRecord::Schema.define(:version => 20110623152332) do
     t.integer  "finalizada", :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "partidos", :force => true do |t|
+    t.integer  "jornada_id"
+    t.integer  "division_id"
+    t.integer  "local"
+    t.integer  "visitante"
+    t.integer  "resultado"
+    t.string   "marcador"
+    t.integer  "finalizado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "casilla"
+    t.integer  "goleslocal"
+    t.integer  "golesvisitante"
   end
 
 end

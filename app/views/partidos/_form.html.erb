@@ -1,0 +1,17 @@
+<%= semantic_form_for @partido do |f| %>
+  <%= f.error_messages %>
+  <%= f.inputs do %>
+    <%= f.input :jornada, :include_blank => false %>
+    <%= f.input :division, :include_blank => false %>
+	<%= f.input :casilla, :include_blank => false %>
+    <%= f.input :local, :for => :local %>
+    <%= f.input :visitante , :for => :visitante%>
+    <%= f.input :resultado, :required => false %>
+    <%= f.input :marcador, :required => false %>
+    <%= f.input :finalizado, :required => false %>
+  <% end %>
+
+  <%= f.buttons do %>
+    <%= f.commit_button %>
+  <% end %>
+<% end %>

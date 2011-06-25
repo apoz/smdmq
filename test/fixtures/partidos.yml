@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  jornada_id: 1
+  division_id: 1
+  local: 1
+  visitante: 1
+  resultado: 1
+  marcador: MyString
+  finalizado: 1
+
+two:
+  jornada_id: 1
+  division_id: 1
+  local: 1
+  visitante: 1
+  resultado: 1
+  marcador: MyString
+  finalizado: 1

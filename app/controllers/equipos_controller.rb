@@ -3,7 +3,7 @@ class EquiposController < ApplicationController
   # GET /equipos.xml
   def index
     @equipos = Equipo.all
-
+	
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @equipos }
@@ -14,7 +14,7 @@ class EquiposController < ApplicationController
   # GET /equipos/1.xml
   def show
     @equipo = Equipo.find(params[:id])
-
+		
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @equipo }

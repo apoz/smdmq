@@ -1,0 +1,36 @@
+<div id="partido_list">
+<h1>Lista de partidos</h1>
+
+<table>
+ <% @partidos.each do |partido| %>
+ <tr class="<%= cycle('lista_partido_par', 'lista_partido_impar') %>">
+	
+	<td>
+       <%= image_tag(partido.division.escudo, :class => 'division_image') %>
+    </td>
+    <td class="partido_jornada"> Jornada<br> <%= partido.jornada.numero %></td>
+    <td>
+       <%= image_tag(partido.local.escudo, :class => 'division_image') %>
+    </td>
+	<td class="partido_local"><%= partido.local.nombre %></td>
+	<td class="partido_divide"> - </ td>
+	<td>
+       <%= image_tag(partido.visitante.escudo, :class => 'division_image') %>
+    </td>
+	<td class="partido_visitante"><%= partido.visitante.nombre %></td>
+    <td class="partido_resultado"><%= partido.resultado %></td>
+    <td class="partido_marcador"><%= partido.marcador %></td>
+    <td class="partido_finalizado"><%= partido.finalizado %></td>
+	<td class="partido_actions">
+		<%= link_to 'Show', partido %>
+		<%= link_to 'Edit', edit_partido_path(partido) %>
+		<%= link_to 'Destroy', partido, :confirm => 'Are you sure?', :method => :delete %>
+	</td>
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Partido', new_partido_path %>

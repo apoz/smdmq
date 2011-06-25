@@ -8,11 +8,13 @@
 <p>
   <b>Escudo:</b>
   <%= @equipo.escudo %>
+  <%= image_tag(@equipo.escudo, :class => 'equipo_image') %>
 </p>
 
 <p>
   <b>Division:</b>
-  <%= @equipo.division_id %>
+  <%= @equipo.division.nombre %>
+  <%= image_tag(@equipo.division.escudo, :class => 'equipo_image') %>
 </p>
 
 

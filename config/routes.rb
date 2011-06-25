@@ -1,4 +1,6 @@
 Smdmq::Application.routes.draw do
+  resources :partidos
+
   resources :jornadas
 
   get "home/index"

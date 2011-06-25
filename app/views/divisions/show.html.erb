@@ -8,7 +8,10 @@
 <p>
   <b>Escudo:</b>
   <%= @division.escudo %>
+  <%= image_tag(@division.escudo, :class => 'equipo_image') %>
 </p>
+
+
 
 
 <%= link_to 'Edit', edit_division_path(@division) %> |

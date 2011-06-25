@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Jornada:</b>
+  <%= @partido.jornada_id %>
+</p>
+
+<p>
+  <b>Division:</b>
+  <%= @partido.division_id %>
+</p>
+
+<p>
+  <b>Local:</b>
+  <%= @partido.local %>
+</p>
+
+<p>
+  <b>Visitante:</b>
+  <%= @partido.visitante %>
+</p>
+
+<p>
+  <b>Resultado:</b>
+  <%= @partido.resultado %>
+</p>
+
+<p>
+  <b>Marcador:</b>
+  <%= @partido.marcador %>
+</p>
+
+<p>
+  <b>Finalizado:</b>
+  <%= @partido.finalizado %>
+</p>
+
+
+<%= link_to 'Edit', edit_partido_path(@partido) %> |
+<%= link_to 'Back', partidos_path %>
