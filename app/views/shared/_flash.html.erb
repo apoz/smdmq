@@ -1,0 +1,6 @@
+<%- flash.each do |flash_type, message| -%>
+  <%= content_tag :div, message, :class => "flash #{flash_type}" , :id => "flash_#{flash_type}"%>
+  <% content_tag :script, :type => "text/javascript" do %>
+    setTimeout("$$('div.flash').each(function(flash){ flash.hide();})", 5000);
+  <% end %>
+<%- end -%>

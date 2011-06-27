@@ -1,0 +1,19 @@
+ #name_roles_input .check_boxes{
+  padding: 10px;
+  margin: 10px;
+  height: auto;
+  
+}
+ #name_roles_input .choices {
+  padding: 10px;
+    margin: 10px;
+   height: auto;
+}
+ #name_roles_input .choices-group {
+  padding: 10px;
+   height: auto;
+}
+#name_roles_input .choice {
+  padding: 10px;
+   height: auto;
+}

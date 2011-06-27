@@ -1,4 +1,6 @@
 Smdmq::Application.routes.draw do
+  devise_for :users
+
   resources :partidos
 
   resources :jornadas
