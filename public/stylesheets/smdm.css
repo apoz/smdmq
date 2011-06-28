@@ -124,6 +124,26 @@ body
 	padding: 5px;
 }
 
+#error_msg{
+	width: 800px;
+	background: #CCC;
+	padding: 5px;
+	color: red;
+}
+
+#notice_msg{
+	width: 800px;
+	background: #CCC;
+	padding: 5px;
+	color: black;
+}
+
+#alert_msg{
+	width: 800px;
+	background: #CCC;
+	padding: 5px;
+	color: red;
+}
 .clear {
 clear: both;
 }

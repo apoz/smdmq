@@ -36,8 +36,15 @@
 		<!-- End Head -->
 		
 		<div id="content">
-		<p class="notice"><%= notice %></p>
-		<p class="error"><%=  error  %></p>
+		<% unless flash[:error].nil? %>  
+			<div id="error_msg"><%= flash[:error] %></div>  
+		<% end %>  
+		<% unless flash[:notice].nil? %>  
+			<div id="notice_msg"><%= flash[:notice] %></div>  
+		<% end %>  
+		<% unless flash[:alert].nil? %>  
+			<div id="alert_msg"><%= flash[:alert] %></div>  
+		<% end %>  
 		<%= yield %>
 	</div>
 
