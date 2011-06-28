@@ -1,6 +1,10 @@
 Smdmq::Application.routes.draw do
+  resources :roles
+
   devise_for :users
 
+  resources :users
+  
   resources :partidos
 
   resources :jornadas
@@ -10,6 +14,8 @@ Smdmq::Application.routes.draw do
   resources :equipos
 
   resources :divisions
+  
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

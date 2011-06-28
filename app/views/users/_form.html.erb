@@ -1,0 +1,25 @@
+<%= semantic_form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="alert">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  
+	<%= f.input :username %>
+    <%= f.input :email %>
+    <%= f.input :password %>
+	<%= f.input :password_confirmation %>
+    <%= f.input :roles, :as => :select %>
+	
+	 
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

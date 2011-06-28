@@ -1,19 +1,38 @@
- #name_roles_input .check_boxes{
+ /*#user_roles_input .check_boxes{
   padding: 10px;
   margin: 10px;
   height: auto;
   
-}
- #name_roles_input .choices {
+}*/
+ /*#user_roles_input .choices {
   padding: 10px;
     margin: 10px;
    height: auto;
-}
- #name_roles_input .choices-group {
+}*/
+ #user_roles_input .choices-group {
   padding: 10px;
    height: auto;
+   vertical-align: baseline;
 }
-#name_roles_input .choice {
+.formtastic .choices .label label {
+	width: 25%;
+	}
+#user_roles_input .choices .label legend {
+	width: 25%;
+}
+
+.formtastic .choices ol {
+	height: auto;
+    vertical-align: baseline;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	display: inline;
+}
+
+/*#user_roles_input .choice {
   padding: 10px;
    height: auto;
-}
+}*/
+
