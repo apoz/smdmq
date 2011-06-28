@@ -1,4 +1,6 @@
 class EquiposController < ApplicationController
+
+	before_filter :authenticate_user!, :except => [:show, :index]  
   # GET /equipos
   # GET /equipos.xml
   def index

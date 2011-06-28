@@ -1,4 +1,6 @@
 class DivisionsController < ApplicationController
+
+	before_filter :authenticate_user!, :except => [:show, :index]  
   # GET /divisions
   # GET /divisions.xml
   def index

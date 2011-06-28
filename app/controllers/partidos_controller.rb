@@ -1,4 +1,6 @@
 class PartidosController < ApplicationController
+
+	before_filter :authenticate_user!, :except => [:show, :index]  
   # GET /partidos
   # GET /partidos.xml
   def index

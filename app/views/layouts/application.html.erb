@@ -11,8 +11,18 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+	<div id="user_nav">  
+		<% if user_signed_in? %>  
+			Signed in as <%= link_to current_user.username, edit_user_registration_path  %>. Not you?  
+			<%= link_to "Sign out", destroy_user_session_path %>  
+		<% else %>  
+			<%= link_to "Sign up", new_user_registration_path %> or  
+			<%= link_to "Sign in", new_user_session_path %>  
+		<% end %>  
+	</div> 
 	<div id="container">
 		<div id="head">
+			
 			<a href="#" class="logo" title="I am a web designer">Insert your anchor text here.</a>
 			<div class="nav">
 				<a href="#about">About</a>
