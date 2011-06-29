@@ -1,5 +1,5 @@
 class EquiposController < ApplicationController
-
+	load_and_authorize_resource
 	before_filter :authenticate_user!, :except => [:show, :index]  
   # GET /equipos
   # GET /equipos.xml

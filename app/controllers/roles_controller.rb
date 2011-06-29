@@ -1,4 +1,8 @@
 class RolesController < ApplicationController
+
+	load_and_authorize_resource
+	before_filter :authenticate_user!, :except => [:show, :index]  
+
   # GET /roles
   # GET /roles.xml
   def index
