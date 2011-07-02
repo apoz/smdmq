@@ -1,7 +1,7 @@
 class DivisionsController < ApplicationController
 
 	load_and_authorize_resource
-	before_filter :authenticate_user!, :except => [:show, :index]  
+	before_filter :authenticate_user!  
   # GET /divisions
   # GET /divisions.xml
   def index
