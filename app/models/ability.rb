@@ -2,20 +2,18 @@ class Ability
   include CanCan::Ability
   
   def initialize(user)
-    #user ||= User.create_guest #guest user
+    user ||= User.new #guest user
 	if user
 	   if user.has_role? :administrator
-			puts "TIPO ADMINISTRATORRR"
 			can :manage, :all
+			can :see_timestamps, User
 		elsif user.has_role? :tesorero
-			puts "TIPO TESORERO"
 			can :manage, Ingreso
-		else 
-			puts "TIPO ELSE"
+		elsif user.has_role? :sanedrin 
 			can :read, :all
+		else
+			can :see_timestamps, User, :id => user.id
 		end
-	else
-		#guest user
 	end
   end
 end

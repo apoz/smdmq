@@ -10,6 +10,12 @@
   <%= @user.username %>
 </p>
 
+<p>
+  <b>Roles:</b> <% roles = current_user.roles %>
+				<% roles.each do |role| %>
+					<%=	role.name %>
+				<% end %>
+</p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

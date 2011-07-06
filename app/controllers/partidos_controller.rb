@@ -1,7 +1,7 @@
 class PartidosController < ApplicationController
 
-load_and_authorize_resource
-	before_filter :authenticate_user!, :except => [:show, :index]  
+	load_and_authorize_resource
+	before_filter :authenticate_user!
   # GET /partidos
   # GET /partidos.xml
   def index
